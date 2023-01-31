@@ -4,7 +4,7 @@ from slack_sdk.web import WebClient
 from slack_service import SlackService
 
 # Initialize a Bolt for Python app
-app = App(token='xoxb-4720168470421-4736004577841-PaoSkDJNNYf5g23SCibcCM6h')
+app = App(token='xoxb-4720168470421-4736004577841-bDizxgpqqmAx2JoxIHnuiuPs')
 channel_id = 'C04LUGX0CT1'
 channel_name = "a-project"
 conversation_id = 'C04LUGX0CT1'
