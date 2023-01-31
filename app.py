@@ -61,6 +61,6 @@ if __name__ == "__main__":
     logger.setLevel(logging.DEBUG)
     logger.addHandler(logging.StreamHandler())
     #sendMessage(app.client)
-    #getMessage(app.client)
-    updateMessage(app.client)
+    getMessage(app.client)
+    #updateMessage(app.client)
     app.start(3000)
