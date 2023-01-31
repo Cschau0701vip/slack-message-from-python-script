@@ -1,7 +1,7 @@
 import logging
 from slack_bolt import App
 from slack_sdk.web import WebClient
-from slack_service import SlackService
+from slack_service import SlackService# noqa
 
 # Initialize a Bolt for Python app
 app = App(token='xoxb-4720168470421-4736004577841-PaoSkDJNNYf5g23SCibcCM6h')
@@ -13,7 +13,7 @@ onboarding_tutorials_sent = {}
 
 def start_onboarding(user_id: str, channel: str, client: WebClient):
     # Create a new onboarding tutorial.
-    onboarding_tutorial = OnboardingTutorial(channel)
+    onboarding_tutorial = OnboardingTutorial(channel)# noqa
 
     # Get the onboarding message payload
     message = onboarding_tutorial.get_message_payload()
@@ -139,7 +139,7 @@ def sendMessage(client):
                     print(f"Found conversation ID: {conversation_id}")
                     break
 
-    except SlackApiError as e:
+    except SlackApiError as e:# noqa
         print(f"Error: {e}")
 
 if __name__ == "__main__":

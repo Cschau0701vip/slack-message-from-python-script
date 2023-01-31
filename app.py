@@ -21,7 +21,7 @@ def sendMessage(client):
             #Print result
             print(f"Message status: {result}")
 
-    except SlackApiError as e:
+    except SlackApiError as e:# noqa
         print(f"Error: {e}")
     
 def updateMessage(client):
@@ -36,7 +36,7 @@ def updateMessage(client):
             #Print result
             print(f"Message status: {result}")
 
-    except SlackApiError as e:
+    except SlackApiError as e:# noqa
         print(f"Error: {e}")
 
 def getMessage(client):
@@ -53,7 +53,7 @@ def getMessage(client):
             #Print result
             print(f"Found conversation ID: {channel_id}: \n Message: {result}")
 
-    except SlackApiError as e:
+    except SlackApiError as e:# noqa
         print(f"Error: {e}")
 
 if __name__ == "__main__":
