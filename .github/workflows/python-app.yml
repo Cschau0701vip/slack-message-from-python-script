@@ -40,4 +40,4 @@ jobs:
         
     - name: Run app
       run: |
-        python app.py ${{ secrets.BOT_USER_OAUTH_TOKEN }} $SLACKCHANNELID $SLACKCHANNELNAME 
+        python app.py ${{ secrets.BOT_USER_OAUTH_TOKEN }} ${{ vars.SLACKCHANNELID }} ${{ vars.SLACKCHANNELNAME }}
