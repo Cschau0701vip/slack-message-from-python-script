@@ -1,13 +1,30 @@
+import sys
 import logging
 from slack_bolt import App
 from slack_sdk.web import WebClient
 from slack_service import SlackService
 
 # Initialize a Bolt for Python app
-app = App(token='xoxb-4720168470421-4736004577841-15xH9rDsk8Ylh0sTxlnLMyqz')
-channel_id = 'C04LUGX0CT1'
-channel_name = "a-project"
-conversation_id = 'C04LUGX0CT1'
+for i in range(len(sys.argv)):
+    print(sys.argv[i])
+
+token = ''
+channel_id = ''
+channel_name = ''
+
+if len(sys.argv) > 2:
+    token = sys.argv[1] #'xoxb-4720168470421-4736004577841-15xH9rDsk8Ylh0sTxlnLMyqz'
+    channel_id = sys.argv[2] #'C04LUGX0CT1'
+    channel_name = sys.argv[3] #'a-project'
+else:
+    print('Please pass required arguments!')
+    exit(1)
+
+print(token, channel_id, channel_name)
+
+app = App(token=token)
+#conversation_id = 'C04LUGX0CT1'
+
 # WebClient instantiates a client that can call API methods
 # When using Bolt, you can use either `app.client` or the `client` passed to listeners.
 def sendMessage(client):
