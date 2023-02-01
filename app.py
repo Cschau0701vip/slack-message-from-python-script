@@ -80,4 +80,4 @@ if __name__ == "__main__":
     sendMessage(app.client)
     #getMessage(app.client)
     #updateMessage(app.client)
-    app.start(3000)
+    #app.start(3000)
