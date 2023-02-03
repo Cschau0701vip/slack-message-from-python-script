@@ -33,7 +33,7 @@ def sendMessage(client):
         if channel_name is not None:
             result = client.chat_postMessage(
                 channel= channel_id,
-                text= "Hi Team, This is new message from python script!!"
+                text= "Hi Team, Good Morning!!"
             )
             #Print result
             print(f"Message status: {result}")
